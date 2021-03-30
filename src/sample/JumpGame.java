@@ -12,7 +12,8 @@ public class JumpGame extends Canvas {
     private int height = 600;
 
     private int houseX, houseY;
-    private int houseVX, houseVY;
+    private double houseVX;
+    private int houseVY;
 
     public JumpGame() {
         JFrame frame = new JFrame("A simple painting");
@@ -24,8 +25,8 @@ public class JumpGame extends Canvas {
 
         houseX = 300;
         houseY = 150;
-        houseVX = 0;
-        houseVY = 1;
+        houseVX = 1;
+        houseVY = -1;
     }
 
     public void update() {
